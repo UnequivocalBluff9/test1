@@ -1785,6 +1785,18 @@ section.employers.employers--page .employers__rating {
     display: none !important;
 }
 
+.header__actions {
+    margin-right: 147px;
+}
+
+.header__actions--log {
+    margin-right: 147px;
+}
+
+.header__btn--theme {
+    display: none !important;
+}
+
 
 
 
