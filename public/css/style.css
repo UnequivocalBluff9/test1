@@ -296,6 +296,10 @@ body {
 
 
 
+
+
+
+
 .tasks__title {
     margin-top: 118px;
     text-align: center;
@@ -614,11 +618,16 @@ body {
 }
 
 
+/* ============================================
+   КНОПКА "ДОБАВИТЬ ЗАКАЗ"
+   ============================================ */
+
 .tasks__add-container {
     display: flex;
     justify-content: flex-start;
     margin-top: 30px;
 }
+
 .btn-add-task {
     width: 78px;
     height: 78px;
@@ -631,31 +640,63 @@ body {
     align-items: center;
     justify-content: center;
     margin-left: 222px;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    gap: 0px;
+    padding: 0px;
+    flex-shrink: 0;
 }
+
+.btn-add-task svg {
+    min-width: 43px;
+    min-height: 43px;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    flex-shrink: 0;
+}
+
 .btn-add-task__text {
     max-width: 0;
     opacity: 0;
     white-space: nowrap;
     font-size: 16px;
+    font-weight: 400;
+    color: var(--color-dark, #000000);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    pointer-events: none;
 }
+
+/* ===== ПРИ НАВЕДЕНИИ ===== */
 .btn-add-task:hover {
-    width: 80px;
-    height: 80px;
-    
-}
-.btn-add-task.is-active {
-    width: 210px; /* Кнопка расширяется, чтобы вместить текст */
-    background-color: #ffffff; /* Фон становится белым */
-    color: #333333; /* Цвет текста становится темным */
+    width: 210px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     padding: 0 20px;
-    gap: 12px; /* Расстояние между крестиком и текстом */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Мягкая тень для белой кнопки */
+    gap: 12px;
 }
+
+.btn-add-task:hover .btn-add-task__text {
+    max-width: 150px;
+    opacity: 1;
+}
+
+.btn-add-task:hover svg {
+    transform: rotate(45deg);
+}
+
+/* ===== АКТИВНОЕ СОСТОЯНИЕ (при клике) ===== */
+.btn-add-task.is-active {
+    width: 210px;
+    background-color: #ffffff;
+    padding: 0 20px;
+    gap: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
 .btn-add-task.is-active svg {
     transform: rotate(45deg);
 }
+
 .btn-add-task.is-active .btn-add-task__text {
     max-width: 150px;
     opacity: 1;
@@ -896,6 +937,15 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
 .header__actions--log {
     display: flex;
     align-items: center;
@@ -983,6 +1033,13 @@ body {
 .header .header__btn--theme:hover {
     opacity: 0.7;
 }
+
+
+
+
+
+
+
 
 
 
@@ -1118,6 +1175,15 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
 section.employers.employers--page .employers__container {
     display: block;             /* Отменяем flex родителя, чтобы сетка не улетала вправо */
     width: 100%;
@@ -1174,6 +1240,9 @@ section.employers.employers--page .employers__rating {
     text-transform: uppercase;
     margin-top: 20px;
 }
+
+
+
 
 
 .students-page-layout {
@@ -1332,6 +1401,10 @@ section.employers.employers--page .employers__rating {
 }
 
 
+
+
+
+
 .company-lk {
     max-width: 1000px;
     margin: 0 auto;
@@ -1354,6 +1427,58 @@ section.employers.employers--page .employers__rating {
     margin: 0;
     text-transform: lowercase;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1524,6 +1649,35 @@ section.employers.employers--page .employers__rating {
 .register-card__submit-btn:active {
     transform: scale(0.98);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .modal-overlay {
@@ -1764,6 +1918,18 @@ section.employers.employers--page .employers__rating {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 .gradient-text {
     background: linear-gradient(to right, #111111, #777777);
     background-clip: text;
@@ -1780,11 +1946,16 @@ section.employers.employers--page .employers__rating {
     padding-left: 120px;
 }
 
+/* ============================================
+   ФИКСЫ ПОСЛЕ УДАЛЕНИЯ ЛУНЫ
+   ============================================ */
 
+/* Скрываем кнопку луны */
 .header__btn--theme {
     display: none !important;
 }
 
+/* Возвращаем отступ справа, который был у луны */
 .header__actions {
     margin-right: 147px;
 }
@@ -1792,11 +1963,3 @@ section.employers.employers--page .employers__rating {
 .header__actions--log {
     margin-right: 147px;
 }
-
-.header__btn--theme {
-    display: none !important;
-}
-
-
-
-
