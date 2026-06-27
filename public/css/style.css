@@ -1781,6 +1781,10 @@ section.employers.employers--page .employers__rating {
 }
 
 
+.header__btn--theme {
+    display: none !important;
+}
+
 
 
 
