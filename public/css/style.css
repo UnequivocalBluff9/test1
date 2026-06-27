@@ -197,13 +197,6 @@ body {
 
 
 
-
-
-
-
-
-
-
 .hero {
     margin-top: 108px;
 }
@@ -300,10 +293,6 @@ body {
     margin-top: 30px;
     margin-bottom: 10px;
 }
-
-
-
-
 
 
 
@@ -673,10 +662,6 @@ body {
 }
 
 
-
-
-
-
 .employers {
     padding: 120px 0;
 }
@@ -766,10 +751,6 @@ body {
     width: 102px;
     height: 125px;
 }
-
-
-
-
 
 
 .feedback {
@@ -915,15 +896,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
 .header__actions--log {
     display: flex;
     align-items: center;
@@ -1011,13 +983,6 @@ body {
 .header .header__btn--theme:hover {
     opacity: 0.7;
 }
-
-
-
-
-
-
-
 
 
 
@@ -1153,15 +1118,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
 section.employers.employers--page .employers__container {
     display: block;             /* Отменяем flex родителя, чтобы сетка не улетала вправо */
     width: 100%;
@@ -1218,9 +1174,6 @@ section.employers.employers--page .employers__rating {
     text-transform: uppercase;
     margin-top: 20px;
 }
-
-
-
 
 
 .students-page-layout {
@@ -1379,10 +1332,6 @@ section.employers.employers--page .employers__rating {
 }
 
 
-
-
-
-
 .company-lk {
     max-width: 1000px;
     margin: 0 auto;
@@ -1405,58 +1354,6 @@ section.employers.employers--page .employers__rating {
     margin: 0;
     text-transform: lowercase;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1627,35 +1524,6 @@ section.employers.employers--page .employers__rating {
 .register-card__submit-btn:active {
     transform: scale(0.98);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .modal-overlay {
@@ -1894,18 +1762,6 @@ section.employers.employers--page .employers__rating {
     background: var(--color-blue);
     color: var(--color-white);
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .gradient-text {
